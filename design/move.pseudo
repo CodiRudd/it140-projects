@@ -1,25 +1,34 @@
 # Project One Move-Between-Rooms Pseudocode
-#
-# Graded checkpoint: Module Five Project One
-# Later use: conceptual support for M6; movement design for M7
-#
-# Review the course-provided movement flowchart before completing this file.
-# Write pseudocode, not Python code. Use clear indentation and course-appropriate
-# keywords such as INPUT, OUTPUT, IF, ELSE, WHILE, SET, or similar terms.
 
-# TODO 1: Identify the information the movement process needs.
-# Consider the player's current room and movement command.
+SET current_room TO "Lobby"
 
-# TODO 2: Prompt for and receive the player's movement command.
+WHILE the game has not ended
+    OUTPUT "Enter a direction: north, south, east, or west."
+    INPUT movement_command
 
-# TODO 3: Validate whether the requested movement is possible from the
-# current room. Show the decision clearly.
+    IF movement_command is "north" AND north is a valid direction from current_room
+        SET current_room TO the room north of current_room
+        OUTPUT "You moved north into " + current_room
+    ELSE IF movement_command is "south" AND south is a valid direction from current_room
+        SET current_room TO the room south of current_room
+        OUTPUT "You moved south into " + current_room
+    ELSE IF movement_command is "east" AND east is a valid direction from current_room
+        SET current_room TO the room east of current_room
+        OUTPUT "You moved east into " + current_room
+    ELSE IF movement_command is "west" AND west is a valid direction from current_room
+        SET current_room TO the room west of current_room
+        OUTPUT "You moved west into " + current_room
+    ELSE
+        OUTPUT "You cannot go that direction from this room. Try again."
+    END IF
 
-# TODO 4: Describe what happens when the movement command is valid.
-# Include the room update and player output.
-
-# TODO 5: Describe what happens when the movement command is invalid.
-# Include the output the player should receive.
-
-# TODO 6: Show how movement fits into repeated gameplay.
-# The final game continues accepting commands until a required ending occurs.
+    IF current_room is "Curator's Office"
+        IF all six items have been collected
+            OUTPUT "You collected everything and escaped the museum!"
+            END GAME WITH WIN
+        ELSE
+            OUTPUT "The Curator caught you! You lose."
+            END GAME WITH LOSS
+        END IF
+    END IF
+END WHILE

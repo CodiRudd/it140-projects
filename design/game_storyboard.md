@@ -1,67 +1,41 @@
 # Project One Storyboard | Text-Based Adventure Game
 
-> Complete the `TODO:` prompts using your own game idea. This file is a graded
-> Project One deliverable and later becomes a reference for Project Two.
-
 ## Theme and Storyline
 
-**Theme:**
+**Theme:** Haunted Museum Mystery
 
-TODO: Name and briefly describe your game's theme.
-
-**Storyline:**
-
-TODO: In one short paragraph, explain the setting, the player's goal, the items
-the player must gather, and the threat created by the villain.
+**Storyline:** The player is trapped inside an old museum after closing time and must explore the building to find six items needed to unlock the main exit. The player starts in the Lobby and can move north, south, east, or west between connected rooms. The six items are a Brass Key, Old Museum Map, Flashlight, Crowbar, Spare Battery, and Master Exit Ticket. The Curator, who has become a ghostly villain, is hiding in the Curator's Office. The player wins by collecting all six items before entering the Curator's Office. If the player enters the villain's room before collecting everything, the game ends and the player loses.
 
 ## Rooms
 
-Project One requires a minimum of eight rooms.
-
-1. TODO: Start room
-2. TODO: Room
-3. TODO: Room
-4. TODO: Room
-5. TODO: Room
-6. TODO: Room
-7. TODO: Room
-8. TODO: Villain room
-
-Add more rooms if your design needs them.
+1. Lobby (Start room)
+2. Gallery
+3. Archives
+4. Security Room
+5. Workshop
+6. Basement
+7. Theater
+8. Curator's Office (Villain room)
 
 ## Items
 
-With the minimum eight-room design, Project One requires at least six items.
-Every room except the start room and villain room must contain one item.
-
-1. TODO: Item
-2. TODO: Item
-3. TODO: Item
-4. TODO: Item
-5. TODO: Item
-6. TODO: Item
-
-If you add rooms beyond the minimum, add an item for every additional room
-except the start room and villain room.
+1. Brass Key
+2. Old Museum Map
+3. Flashlight
+4. Crowbar
+5. Spare Battery
+6. Master Exit Ticket
 
 ## Villain
 
-TODO: Identify and briefly describe the villain.
+The Curator is the ghost of the museum's former curator. He wanders the museum after dark and protects the building's secrets. The player must avoid his office until all six items have been collected.
 
 ## Storyboard and Map Check
 
-Before submitting, compare this storyboard with `game_map.drawio`.
-
-* [ ] I included eight (8) rooms.
-* [ ] I included six (6) collectable items.
-* [ ] The start room has no item.
-* [ ] The villain room has no item.
-* [ ] Every room except the start room and villain room contains one item.
-* [ ] Room, item, and villain names match my map.
-* [ ] The map allows the player to collect all required items before the
-  villain is encountered.
-
-## Project Two Handoff
-
-Keep this file after Project One. In Module Seven, use these names and design
-choices when building the final room/item dictionary and player-facing output.
+- [x] At least eight rooms
+- [x] At least six items
+- [x] Start room has no item
+- [x] Villain room has no item
+- [x] Every other room contains one item
+- [x] Room, item, and villain names match the map
+- [x] The map allows the player to collect all items before encountering the villain
